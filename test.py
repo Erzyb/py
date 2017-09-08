@@ -20,6 +20,7 @@ color = (255,0,0)
 def draw_text(text,color):
     im = Image.open(original_image)
     x,y = im.size
+    print im.format,im.size,im.mode
     im.show()
 
     draw = ImageDraw.Draw(im)
